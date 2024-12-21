@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("bgg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: rgb(6, 4, 35, 0.5);
+
+
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color);
+    cursor: pointer;
+    /* padding: 20px; */
+}
+
+.logoimg {
+    width: 200px;
+    height: 120px;
+    z-index: 1000;
+}
+
+.rightnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    gap: 15px;
+}
+
+.right {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.right:hover {
+    cursor: pointer;
+    color: var(--color);
+    /* text-decoration: underline; */
+    /* text-underline-offset: 4px; */
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+}
+
+.login-box {
+    width: 400px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #007BFF;
+    /* Accent color */
+}
+
+.input-container input:focus {
+    border-bottom: 2px solid #007BFF;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fa8b31;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f76c1d;
+}
+
+.reg {
+    font-size: 14px;
+    padding-top: 10px;
+    color: #5e5e5e;
+}
